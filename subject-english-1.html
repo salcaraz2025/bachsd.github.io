@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang = "en">
+   <head>
+      <title> KHub: English 3 - Balingkilat </title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+      <link href="http://fonts.cdnfonts.com/css/gope" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+      <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+      <script src="https://kit.fontawesome.com/d3257338ce.js" crossorigin="anonymous"></script>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
+      <style>
+         body {
+         font-family: 'Poppins', 'Staatliches', 'Gope';
+         font-size: large;
+         background-color: #001121;
+         }
+         .jumbotron {
+         padding-top: 20px;
+         padding-bottom: 40px;
+         max-height: 200px;
+         background-image: url(https://c.tenor.com/K5zpR0l_ik0AAAAM/aesthetic-train.gif);
+         background-size: cover;
+         font-family: 'Gope', sans-serif;
+         color: white;
+         text-shadow: 3px 3px 5px black;
+         }
+         #heading {
+         background-color: Gainsboro;
+         padding: 10px;
+         }
+         .navbar {
+         background-color: #00407A;
+         padding-top: 15px;
+         padding-bottom: 15px;
+         }
+         .navbar-toggler-icon {
+         background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255,1)' stroke-width='4' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+         }
+         .navbar-toggler-icon:hover {
+         background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(220,220,220,1)' stroke-width='4' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+         }
+         .dropdown-item {
+         background-color:#00407A;
+         color: white;
+         border-radius: 0px;
+         padding: 0.75rem 4rem;
+         font-size: 125%;
+         }
+         .dropdown-item:hover {
+         background-color:#083964;
+         color: #E6E6E6;
+         }
+         .dropdown-menu {
+         background-color:#00407A;
+         border-radius: 0px;
+         margin-top: 0px;
+         }
+         ul {
+         list-style: none;
+         margin-top: 5px;
+         }
+         li{
+         margin: 15px 0px;
+         }
+         #math{
+         background-color: Gainsboro;
+         border: 10px solid #083964;
+         border-bottom: 5px solid #083964;
+         background-color:  #083964;
+         }
+         #title{
+         background-size: cover;
+         width: 100%;
+         height: 100%;
+         border-bottom: 1px solid black;
+         }
+         #teacher{
+         text-align: center;
+         padding-bottom: 10px;
+         background-color: #000;
+         font-family: 'Gope';
+         color: #ff7b00;
+         padding-top: 5px;
+         border-bottom: 10px solid #083964;
+         }
+         #quarter{
+         padding: 20px;
+         border: 10px solid #083964;
+         background-image: url("https://4.bp.blogspot.com/-uhiZjSQRwXg/WDw9HHFDNOI/AAAAAAAANPA/C9BiE7efuaoNSEGtndT2__P-X2vZPb4sQCLcB/s1600/Cultural%2BFront_Books%2Bfrom%2Bthe%2B20th%2Bcentury%2B1c1.jpg");
+         background-size: cover;
+         background-position: center;
+         color: #ff7b00;
+         text-shadow: 6px 6px 10px black;
+         }
+         #second{
+         font-family: 'Staatliches';
+         font-size: 90px;
+         text-align: center;
+         }
+         #urgent{
+         padding-left: 20px;
+         padding-top: 20px;
+         padding-bottom: 20px;
+         border: 10px solid #083964;
+         background-color: #000;
+         font-family: 'Architects Daughter';
+         }
+         #announce {
+         color: #ffffff;
+         font-family: 'Staatliches';
+         }
+         h2 {
+         font-family: 'Staatliches';
+         }
+         #vert, #vert2{
+         background-color: LightGray;
+         border: 10px solid #083964;
+         padding-top: 15px;
+         padding-left: 15px;
+         color: #ffffff;
+         background-color: #000;
+         text-align: center;
+         font-family: 'Architects Daughter';
+         }
+         #content{
+         padding: 20px;
+         font-size: 25px;
+         border: 10px solid #083964;
+         color: #ffffff;
+         background-color: #000;
+         font-family: 'Architects Daughter';
+         }
+         #content2{
+         padding: 20px;
+         font-size: 25px;
+         border: 10px solid #083964;
+         color: #ffffff;
+         background-color: #000;
+         font-family: 'Architects Daughter';
+         }
+         footer {
+         margin-top: 40px;
+         background-image: url(https://c.tenor.com/K5zpR0l_ik0AAAAM/aesthetic-train.gif);
+         background-repeat: no-repeat;
+         background-size: cover;
+         height: auto;
+         padding-top: 40px;
+         color: white;
+         text-shadow: 3px 3px 5px black;
+         }
+         .footer-content{
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         flex-direction: column;
+         text-align: center;
+         }
+         .footer-content h3{
+         font-family: 'Gope', sans-serif;
+         font-size: 2.1rem;
+         font-weight: 500;
+         text-transform: capitalize;
+         line-height: 3rem;
+         }
+         .footer-content p{
+         max-width: 500px;
+         margin: 10px auto;
+         line-height: 28px;
+         font-size: 14px;
+         color: white;
+         text-shadow: 3px 3px 5px black;
+         }
+         .footer-bottom{
+         background: #083964;
+         padding: 20px;
+         height: 120px;
+         padding: 20px;
+         text-align: center;
+         }
+         .footer-bottom p{
+         float: left;
+         font-size: 14px;
+         word-spacing: 2px;
+         text-transform: capitalize;
+         }
+         .footer-bottom p a{
+         color:#ffffff;
+         font-size: 16px;
+         text-decoration: none;
+         }
+         .footer-bottom span{
+         text-transform: uppercase;
+         opacity: .4;
+         font-weight: 200;
+         }
+         .footer-menu{
+         float: right;
+         }
+         .footer-menu ul{
+         display: flex;
+         }
+         .footer-menu ul li{
+         padding-right: 10px;
+         display: block;
+         }
+         .footer-menu ul li a{
+         color: #cfd2d6;
+         text-decoration: none;
+         }
+         .footer-menu ul li a:hover{
+         color: #ffffff;
+         }
+         @media (max-width:768px) {
+         #teacher {
+         font-size: 30px;
+         }
+         }
+         @media (max-width:500px) {
+         .footer-menu ul{
+         display: flex;
+         margin-top: 10px;
+         margin-bottom: 20px;
+         }
+         }
+         .text-responsive{
+           font-size: calc(5vw);
+         }
+      </style>
+   </head>
+   <body>
+      <div class="jumbotron text-center">
+         <h1 style="font-size: 120px;">K-Hub</h1>
+      </div>
+      <nav class="navbar navbar-expand-lg sticky-top" style="margin-top: -2rem;">
+         <a class="navbar-toggler-icon dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown"></a>
+         <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">
+               <h4><i class="fas fa-tachometer-alt"></i> Dashboard</h4>
+            </a>
+            <a class="dropdown-item" href="#">
+               <h4><i class="fas fa-home"></i> Site Home</h4>
+            </a>
+            <a class="dropdown-item" href="#">
+               <h4><i class="fas fa-calendar-week"></i> Calendar</h4>
+            </a>
+            <a class="dropdown-item" href="#">
+               <h4><i class="fas fa-file-archive"></i> Private Files</h4>
+            </a>
+            <!--- Dropdown items below are for COURSE (SUBJECT) CONTENT PAGES ONLY -->
+            <a class="dropdown-item" href="#">
+               <h4><i class="fas fa-users"></i> Participants</h4>
+            </a>
+            <a class="dropdown-item" href="#">
+               <h4><i class="fas fa-certificate"></i> Badges</h4>
+            </a>
+            <a class="dropdown-item" href="#">
+               <h4><i class="far fa-star"></i> Competencies</h4>
+            </a>
+            <a class="dropdown-item" href="#">
+               <h4><i class="fas fa-graduation-cap"></i> Grades</h4>
+            </a>
+         </div>
+      </nav>
+      <div class="container">
+         <div class="row">
+            <div class="col-sm-12">
+               <div id = "math">
+                  <img src="https://as1.ftcdn.net/v2/jpg/03/70/42/66/1000_F_370426690_Pejt9KxjWTHPklsKwripaxr0iA17zupF.jpg" alt="banner" id="title">
+                  <h4 id = "teacher" class = "text-responsive">Roma Angelou T. Dizon</h4>
+               </div>
+            </div>
+         </div>
+         <div class="row">
+            <div class="col-sm-12">
+               <div id = "urgent">
+                  <h3 id = "announce"><i class="fas fa-universal-access">Announcements</i></h3>
+                  <input type = "checkbox" id = "ann">
+                  <label for = "ann" style = "color: #ffffff;">Just submit everything before February 7 before 1600 hours so there wont be any problems.</label><br>
+               </div>
+            </div>
+         </div>
+         <div class="row">
+            <div class="col-sm-12">
+               <div id = "quarter">
+                  <h3 id = "second">Second Quarter</h3>
+               </div>
+            </div>
+         </div>
+         <div class="row">
+            <div class="col-sm-12">
+               <div id = "Week">
+                  <div id = "vert">
+                     <h2>First and Second Week</h2>
+                  </div>
+                  <div id = "content">
+                     <input type = "checkbox" id = "con">
+                     <h4><label for = "con"><a href = "https://khub.clc.pshs.edu.ph/mod/resource/view.php?id=40345"><span class = "fas fa-folder"></span></a> SLG 1.1 Organizing Information Using Outlines</label></h4><br>
+                     <input type = "checkbox" id = "con2">
+                     <h4><label for = "con2"><a href = "https://khub.clc.pshs.edu.ph/mod/resource/view.php?id=40344"><span class = "fas fa-folder"></span></a> SLG 1.2 Organizing Information Using Ordering Strategies</label></h4><br>
+                     <input type = "checkbox" id = "con3">
+                     <h4><label for = "con3"><a href = "https://khub.clc.pshs.edu.ph/mod/resource/view.php?id=40346"><span class = "fas fa-folder"></span></a> SLG 1.3 Language and Style in Academic Writing</label></h4><br>
+                     <input type = "checkbox" id = "con4">
+                     <h4><label for = "con4"><a href = "">Graded Formative Assessment Module 1.0</a></label></h4><br>
+                     <input type = "checkbox" id = "con5">
+                     <h4><label for = "con5"><a href = "">Graded Formative Assessment Module 1.1</a></label></h4><br>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="row">
+            <div class="col-sm-12">
+               <div id = "Week21">
+                  <div id = "vert2">
+                     <h2>Third Week, LG 2.0</h2>
+                  </div>
+               </div>
+               <div id = "Week2">
+                  <div id = "content2">
+                     <input type = "checkbox" id = "con6">
+                     <h4><label for = "con6"><a href = "https://khub.clc.pshs.edu.ph/mod/resource/view.php?id=42456"><span class = "fas fa-folder"></span></a> I Wandered Lonely as a Cloud Literary Text</label></h4><br>
+                     <input type = "checkbox" id = "con7">
+                     <h4><label for = "con7"><a href = "https://khub.clc.pshs.edu.ph/mod/resource/view.php?id=40349"><span class = "fas fa-folder"></span></a> SLG 2.1 Romantic Age and Poetry</label></h4><br>
+                     <input type = "checkbox" id = "con8">
+                     <h4><label for = "con8"><a href = "https://khub.clc.pshs.edu.ph/mod/resource/view.php?id=40348"><span class = "fas fa-folder"></span></a> SLG 2.2 I Wandered Lonely as a Cloud by William Wordsworth</label></h4><br>
+                     <input type = "checkbox" id = "con9">
+                     <h4><label for = "con9"><a href = "https://khub.clc.pshs.edu.ph/mod/resource/view.php?id=40347"><span class = "fas fa-folder"></span></a> SLG 2.3 Poetic Elements Analysis</label></h4><br>
+                     <input type = "checkbox" id = "con10" >
+                     <h4><label for = "con10"><a href = "">Graded Formative Assessment Module 2.0 </a></label></h4><br>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <footer>
+         <div class="footer-content">
+            <h3>KHub: Reimagined</h3>
+            <h6>PSHS CLC - Knowledge Hub</h6>
+         </div>
+         <div class="footer-bottom">
+            <p>Copyright 2022 &copy; <a href="#">Khub: Reimagined </a>  </p>
+            <div class="footer-menu">
+               <ul class="f-menu">
+                  <li><a href="">Dashboard</a></li>
+                  <li><a href="">Contact Us</a></li>
+                  <li><a href="">About</a></li>
+                  <li><a href="">Policies</a></li>
+               </ul>
+            </div>
+         </div>
+      </footer>
+   </body>
+</html>

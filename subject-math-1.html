@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="CSS.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/58ffa01394.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
+<link href="http://fonts.cdnfonts.com/css/gope" rel="stylesheet">
+  <style>
+    body{
+      background-color: #001121;
+    }
+    .jumbotron{
+      padding-top: 20px;
+      padding-bottom: 20px;
+      background-image: url(https://c.tenor.com/K5zpR0l_ik0AAAAM/aesthetic-train.gif);
+		background-size: cover;
+		background-repeat: no-repeat;
+		border-radius: 0px;
+		color: white;
+    font-family: 'Gope';
+    }
+    #heading{
+      background-color: Gainsboro;
+    }
+    #math{
+          background-color: Gainsboro;
+          border: 10px solid #083964;
+          border-bottom: 5px solid #083964;
+          background-color:  #083964;
+        }
+        #title{
+          background-size: cover;
+          width: 100%;
+          height: 100%;
+          border-bottom: 1px solid black;
+        }
+        #teacher {
+          text-align: center;
+          padding-bottom: 10px;
+          background-color: #000;
+          font-family: 'Gope';
+          color: #0061c2;
+          padding-top: 5px;
+          border-bottom: 10px solid #083964;
+          font-family: 'Gope';
+        }
+    #quarter{
+      padding-left: 15px;
+      padding-right: 15px;
+      padding-top: 180px;
+      height: 500px;
+      border: 10px solid #083964;
+      background-image: url("https://live.staticflickr.com/7362/16398696802_92b598ca79_b.jpg");
+      background-size: cover;
+      background-position: right center;
+      color: #ffffff;
+    }
+    #second{
+      font-size: 70px;
+    }
+    #urgent{
+      border: 10px solid #083964;
+      padding-top: 10px;
+      padding-left: 10px;
+      background-color: #000;
+      font-family: 'Architects Daughter';
+    }
+    .navbar{
+  		background-color: #00407A;
+  		padding-top: 15px;
+  		padding-bottom: 15px;
+  	}
+
+    .navbar-toggler-icon{
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255,1)' stroke-width='4' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+    }
+    .navbar-toggler-icon:hover{
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(220,220,220,1)' stroke-width='4' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+    }
+
+  	.dropdown-item{
+  		background-color:#00407A;
+  		color: white;
+  		border-radius: 0px;
+  		padding: 0.75rem 4rem;
+  		font-size: 125%;
+  	}
+
+  	.dropdown-item:hover{
+  		background-color:#083964;
+  		color: #E6E6E6;
+  	}
+
+  	 .dropdown-menu{
+  		background-color:#00407A;
+  		border-radius: 0px;
+  		margin-top: 0px;
+  	 }
+
+    #vert, #vert2{
+      height: 100px;
+      background-color: LightGray;
+     border: 10px solid #083964;
+     padding-top: 15px;
+     padding-left: 15px;
+     color: #ffffff;
+     background-color: #000;
+     font-family: 'Architects Daughter';
+    }
+    #content{
+      padding-top: 20px;
+      padding-left: 20px;
+      padding-right: 20px;
+      border: 10px solid #083964;
+      color: #ffffff;
+      background-color: #000;
+      font-family: 'Architects Daughter';
+    }
+    #content2{
+      padding-top: 20px;
+      padding-left: 20px;
+      padding-right: 20px;
+      border: 10px solid #083964;
+      color: #ffffff;
+      background-color: #000;
+      font-family: 'Architects Daughter';
+   }
+   a:hover{
+     color:#00d2d9;
+   }
+   footer {
+         background-image: url(https://c.tenor.com/K5zpR0l_ik0AAAAM/aesthetic-train.gif);
+         background-size: cover;
+         height: auto;
+         padding-top: 40px;
+         color: white;
+         text-shadow: 3px 3px 5px black;
+         margin-top: 40px;
+         }
+         .footer-content{
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         flex-direction: column;
+         text-align: center;
+         }
+         .footer-content h3{
+         font-family: 'Gope', sans-serif;
+         font-size: 2.1rem;
+         font-weight: 500;
+         text-transform: capitalize;
+         line-height: 3rem;
+         }
+         .footer-content p{
+         max-width: 500px;
+         margin: 10px auto;
+         line-height: 28px;
+         font-size: 14px;
+         color: white;
+         text-shadow: 3px 3px 5px black;
+         }
+         .footer-bottom{
+         background: #083964;
+         height: 100px;
+         padding: 20px;
+         text-align: center;
+         }
+         .footer-bottom p{
+         float: left;
+         font-size: 14px;
+         word-spacing: 2px;
+         text-transform: capitalize;
+         }
+         .footer-bottom p a{
+         color:#ffffff;
+         font-size: 16px;
+         text-decoration: none;
+         }
+         .footer-bottom span{
+         text-transform: uppercase;
+         opacity: .4;
+         font-weight: 200;
+         }
+         .footer-menu{
+         float: right;
+         }
+         .footer-menu ul{
+         display: flex;
+         }
+         .footer-menu ul li{
+         padding-right: 10px;
+         display: block;
+         }
+         .footer-menu ul li a{
+         color: #cfd2d6;
+         text-decoration: none;
+         }
+         .footer-menu ul li a:hover{
+         color: #ffffff;
+         }
+         @media (max-width:500px) {
+         .footer-menu ul{
+         display: flex;
+         margin-top: 10px;
+         margin-bottom: 20px;
+         }
+         }
+         .text-responsive{
+           font-size: calc(5vw);
+         }
+  </style>
+  <title>KHub - Mathematics</title>
+</head>
+<body>
+  <header class = "jumbotron text-center">
+    <h1 class="display-1" style="font-size: 120px;">K-Hub</h1>
+  </header>
+
+  <nav class="navbar navbar-expand-lg sticky-top" style="margin-top: -2rem;">
+    <a class="navbar-toggler-icon dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown"></a>
+			<div class="dropdown-menu">
+				<a class="dropdown-item" href="#"><h4><i class="fas fa-tachometer-alt"></i> Dashboard</h4></a>
+				<a class="dropdown-item" href="#"><h4><i class="fas fa-home"></i> Site Home</h4></a>
+				<a class="dropdown-item" href="#"><h4><i class="fas fa-calendar-week"></i> Calendar</h4></a>
+				<a class="dropdown-item" href="#"><h4><i class="fas fa-file-archive"></i> Private Files</h4></a>
+				<a class="dropdown-item" href="#"><h4><i class="fas fa-users"></i> Participants</h4></a>
+				<a class="dropdown-item" href="#"><h4><i class="fas fa-certificate"></i> Badges</h4></a>
+				<a class="dropdown-item" href="#"><h4><i class="far fa-star"></i> Competencies</h4></a>
+				<a class="dropdown-item" href="#"><h4><i class="fas fa-graduation-cap"></i> Grades</h4></a>
+			</div>
+	</nav>
+<div class = "container">
+  <div class = "row">
+    <div class = "col-sm-12">
+      <div id = "math">
+        <img src = "https://i.pinimg.com/736x/72/3c/c2/723cc26fa128164f9b351f218633e1d4.jpg" alt = "banner" id = "title">
+        <h4 id = "teacher" class = "text-responsive">Mar Joseph Quiton Fernandez</h4>
+      </div>
+    </div>
+  </div>
+
+  <div class = "row">
+    <div class = "col-sm-12">
+      <div id = "urgent">
+        <h3 id = "announce" style = "color: #ffffff;">Announcements</h3>
+        <input type = "checkbox" id = "check1" name = "ann">
+        <label for = "check1" style = "color: #ffffff;">Regarding the announcements on February 7th, all Mathematics assessments
+          are extended until 4:30 p.m. of that day. Any assessments
+          submitted after that time will not be counted towards your Second Quarter Grade.</label><br>
+      </div>
+    </div>
+  </div>
+  <div class = "row">
+    <div class = "col-sm-12">
+      <div id = "quarter">
+        <h3 id = "second" style = "font-family: 'Gope'; text-align: center;">Second Quarter</h3>
+      </div>
+    </div>
+  </div>
+
+  <div class = "row">
+    <div class = "col-sm-12">
+      <div id = "Week">
+        <div id = "vert">
+          <h2 class = "nein">Week 1</h2>
+        </div>
+        <div id = "content">
+          <input type = "checkbox" id = "con">
+          <h4><label for = "con"><a href = "https://khub.clc.pshs.edu.ph/pluginfile.php/58703/mod_folder/content/0/SLG%20Math3%204.1.pdf?forcedownload=1" download><span class = "fas fa-folder"></span></a>&nbsp;&nbsp;SLG 4.1 - Remainder Theorem, Factor Theorem and Descartes' Rule of Signs</label></h4><br>
+          <input type = "checkbox" id = "con2">
+          <h4><label for = "con2"><a href = "https://khub.clc.pshs.edu.ph/pluginfile.php/58703/mod_folder/content/0/SLG%20Math3%204.2.pdf?forcedownload=1" download><span class = "fas fa-folder"></span></a>&nbsp;&nbsp;SLG 4.2 - Rational Root Theorem</label></h4><br>
+          <input type = "checkbox" id = "con3">
+          <h4><label for = "con3"><a href = "https://khub.clc.pshs.edu.ph/pluginfile.php/58703/mod_folder/content/0/SLG%20Math3%204.3.pdf?forcedownload=1" download><span class = "fas fa-folder"></span></a>&nbsp;&nbsp;SLG 4.3 - End Behavior of the Graph of a Polynomial Function</label></h4><br>
+          <input type = "checkbox" id = "con4">
+          <h4><label for = "con4"><a href = "">Week 1 Quiz (Closed)</a></label></h4><br>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div id = "Week21">
+    <div id = "vert2">
+      <h2 class = "too">Week 2</h2>
+    </div>
+  </div>
+
+  <div class = "row">
+    <div class = "col-sm-12">
+      <div id = "Week2">
+        <div id = "content2">
+          <input type = "checkbox" id = "con5">
+          <h4><label for = "con5"><a href = "https://khub.clc.pshs.edu.ph/pluginfile.php/59597/mod_folder/content/0/SLG%20Math3%204.4.pdf?forcedownload=1" download><span class = "fas fa-folder"></span></a>&nbsp;&nbsp;SLG 4.4 – Sketching the Graph of a Polynomial Function</label></h4><br><br>
+          <input type = "checkbox" id = "con6">
+          <h4><label for = "con6"><a href = "https://khub.clc.pshs.edu.ph/pluginfile.php/59597/mod_folder/content/0/SLG%20Math3%204.5.pdf?forcedownload=1" download><span class = "fas fa-folder"></span></a>&nbsp;&nbsp;SLG 4.5 – Sketching the Graph of a Rational Function</label></h4><br><br>
+          <input type = "checkbox" id = "con7">
+          <h4><label for = "con7"><a href = "">Week 2 Quiz</a></label></h4><br><br>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer>
+       <div class="footer-content">
+          <h3>KHub: Reimagined</h3>
+          <h6>PSHS CLC - Knowledge Hub</h6>
+       </div>
+       <div class="footer-bottom">
+          <p>Copyright 2022 &copy; <a href="#">Khub: Reimagined </a> </p>
+          <div class="footer-menu">
+             <ul class="f-menu">
+                <li><a href="">Dashboard</a></li>
+                <li><a href="">Contact Us</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Policies</a></li>
+             </ul>
+          </div>
+       </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,767 @@
+
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+  <title> KHub: English 3 - Balingkilat </title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+  <link href="http://fonts.cdnfonts.com/css/gope" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+  <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+  <style>
+   body {
+      font-family: 'Poppins', 'Staatliches', 'Gope';
+      font-size: large;
+      background-color: #001121;
+    }
+   .jumbotron {
+      padding-top: 40px;
+      max-height: 200px;
+      background-image: url(https://c.tenor.com/K5zpR0l_ik0AAAAM/aesthetic-train.gif);
+      background-repeat: no-repeat;
+      background-size: cover;
+      font-family: 'Gope', sans-serif;
+      border-radius: 0px;
+      font-size: 50px;
+      color: white;
+      text-shadow: 3px 3px 5px black;
+    }
+    #heading {
+      background-color: Gainsboro;
+      padding: 10px;
+    }
+    .navbar {
+      background-color: #00407A;
+      padding-top: 15px;
+      padding-bottom: 15px;
+    }
+    .navbar-toggler-icon {
+      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255,1)' stroke-width='4' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+    }
+    .navbar-toggler-icon:hover {
+      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(220,220,220,1)' stroke-width='4' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+    }
+    .dropdown-item {
+      background-color:#00407A;
+      color: white;
+      border-radius: 0px;
+      padding: 0.75rem 4rem;
+      font-size: 125%;
+    }
+    .dropdown-item:hover {
+      background-color:#083964;
+      color: #E6E6E6;
+    }
+    .dropdown-menu {
+      background-color:#00407A;
+      border-radius: 0px;
+      margin-top: 0px;
+    }
+    ul {
+      list-style: none;
+      margin-top: 5px;
+    }
+    li{
+      margin: 15px 0px;
+	  color: #ffffff;
+    }
+  	.breadcrumb{
+		background-color: black;
+    padding: 1px 15px !important;
+    font-size: 16px;
+	}
+    #number{
+      padding-left: 10px;
+      padding-top: 20px;
+      padding-right: 10px;
+      border: 10px solid #083964;
+      border-bottom: 10px solid #083964;
+      border-right: 10px solid #083964;
+      background-color: rgb(19, 19, 19);
+      color: #ffffff;
+    }
+    .img-fluid{
+      max-width: 60%;
+      height: auto;
+    }
+    #quiz{
+      padding-left: 10px;
+      padding-top: 20px;
+      padding-right: 10px;
+      padding-bottom: 10px;
+      border: 10px solid #083964;
+      border-bottom: 10px solid #083964;
+      border-left: 10px solid #083964;
+      background-color: rgb(19, 19, 19);
+      color: #ffffff;
+    }
+    #item-one{
+      padding-left: 10px;
+      padding-top: 20px;
+      padding-right: 10px;
+      border: 10px solid #083964;
+      border-bottom: 10px solid #083964;
+      border-left: 10px solid #083964;
+      background-color: rgb(19, 19, 19);
+      color: #ffffff;
+    }
+    #item-two{
+      padding-left: 10px;
+      padding-top: 20px;
+      padding-right: 10px;
+      border: 10px solid #083964;
+      border-bottom: 10px solid #083964;
+      border-left: 10px solid #083964;
+      background-color: rgb(19, 19, 19);
+      color: #ffffff;
+    }
+    #item-three{
+      padding-left: 10px;
+      padding-top: 20px;
+      padding-right: 10px;
+      border: 10px solid #083964;
+      border-bottom: 10px solid #083964;
+      border-left: 10px solid #083964;
+      background-color: rgb(19, 19, 19);
+      color: #ffffff;
+    }
+    #item-four{
+      padding-left: 10px;
+      padding-top: 20px;
+      padding-right: 10px;
+      border: 10px solid #083964;
+      border-bottom: 10px solid #083964;
+      border-left: 10px solid #083964;
+      background-color: rgb(19, 19, 19);
+      color: #ffffff;
+    }
+    #item-five{
+      padding-left: 10px;
+      padding-top: 20px;
+      padding-right: 10px;
+      border: 10px solid #083964;
+      border-bottom: 10px solid #083964;
+      border-left: 10px solid #083964;
+      background-color: rgb(19, 19, 19);
+      color: #ffffff;
+    }
+    #item-six{
+      padding-left: 10px;
+      padding-top: 20px;
+      padding-right: 10px;
+      border: 10px solid #083964;
+      border-bottom: 10px solid #083964;
+      border-left: 10px solid #083964;
+      background-color: rgb(19, 19, 19);
+      color: #ffffff;
+    }
+    #item-seven{
+      padding-left: 10px;
+      padding-top: 20px;
+      padding-right: 10px;
+      border: 10px solid #083964;
+      border-bottom: 10px solid #083964;
+      border-left: 10px solid #083964;
+      background-color: rgb(19, 19, 19);
+      color: #ffffff;
+    }
+    #item-eight{
+      padding-left: 10px;
+      padding-top: 20px;
+      padding-right: 10px;
+      border: 10px solid #083964;
+      border-bottom: 10px solid #083964;
+      border-left: 10px solid #083964;
+      background-color: rgb(19, 19, 19);
+      color: #ffffff;
+    }
+    #item-nine{
+      padding-left: 10px;
+      padding-top: 20px;
+      padding-right: 10px;
+      border: 10px solid #083964;
+      border-bottom: 10px solid #083964;
+      border-left: 10px solid #083964;
+      background-color: rgb(19, 19, 19);
+      color: #ffffff;
+    }
+    #item-ten{
+      padding-left: 10px;
+      padding-top: 20px;
+      padding-right: 10px;
+      border: 10px solid #083964;
+      border-bottom: 10px solid #083964;
+      border-left: 10px solid #083964;
+      background-color: rgb(19, 19, 19);
+      color: #ffffff;
+    }
+    #urgent{
+      padding-left: 20px;
+      padding-top: 20px;
+      padding-right: 20px;
+      border: 10px solid #083964;
+      border-bottom: 10px solid #083964;
+      background-color: #000;
+    }
+  	#subject{
+      padding-left: 20px;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      height:100%;
+      border: 10px solid #083964;
+      background-color: #000;
+    }
+    #announce {
+      color: #ffffff;
+      font-family: 'Staatliches';
+    }
+    #asessment{
+      color: #ffffff;
+      font-family: 'Staatliches';
+    }
+    #navigation{
+      padding-left: 20px;
+      padding-top: 20px;
+      padding-inline-end: 20px;
+      border: 10px solid #083964;
+      height: 150px;
+      background-color: #000;
+      text-align: end;
+      color: #ffffff;
+    }
+    h2 {
+      font-family: 'Staatliches';
+    }
+    #content{
+      padding-top: 20px;
+      padding-left: 20px;
+      border: 10px solid #083964;
+      color: #ffffff;
+      background-color: #000;
+    }
+    #content2{
+      padding-top: 20px;
+      padding-left: 20px;
+      border: 10px solid #083964;
+      color: #ffffff;
+      background-color: #000;
+    }
+    .table{
+        color: #ffffff;
+        text-align: center;
+    }
+    .btn-info{
+        background-color:#00407A;
+        border: #00407A;
+        text-align: center;
+    }
+    footer {
+      margin-top: 40px;
+      background-image: url(https://c.tenor.com/K5zpR0l_ik0AAAAM/aesthetic-train.gif);
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: auto;
+      padding-top: 40px;
+      color: white;
+      text-shadow: 3px 3px 5px black;
+    }
+    .footer-content{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      text-align: center;
+    }
+    .footer-content h3{
+      font-family: 'Gope', sans-serif;
+      font-size: 2.1rem;
+      font-weight: 500;
+      text-transform: capitalize;
+      line-height: 3rem;
+    }
+    .footer-content p{
+      max-width: 500px;
+      margin: 10px auto;
+      line-height: 28px;
+      font-size: 14px;
+      color: white;
+      text-shadow: 3px 3px 5px black;
+    }
+    .footer-bottom{
+      background: #083964;
+      padding: 20px;
+      height: 120px;
+      padding: 20px;
+      text-align: center;
+    }
+    .footer-bottom p{
+      float: left;
+      font-size: 14px;
+      word-spacing: 2px;
+      text-transform: capitalize;
+    }
+    .footer-bottom p a{
+      color:#ffffff;
+      font-size: 16px;
+      text-decoration: none;
+    }
+    .footer-bottom span{
+      text-transform: uppercase;
+      opacity: .4;
+      font-weight: 200;
+    }
+    .footer-menu{
+      float: right;
+    }
+    .footer-menu ul{
+      display: flex;
+    }
+    .footer-menu ul li{
+      padding-right: 10px;
+      display: block;
+    }
+    .footer-menu ul li a{
+      color: #cfd2d6;
+      text-decoration: none;
+    }
+    .footer-menu ul li a:hover{
+      color: #ffffff;
+    }
+    @media (max-width:500px) {
+    .footer-menu ul{
+          display: flex;
+          margin-top: 10px;
+          margin-bottom: 20px;
+        }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="jumbotron text-center">
+    <h1 class="display-1">K-Hub</h1>
+  </div>
+
+  <nav class="navbar navbar-expand-lg sticky-top" style="margin-top: -2rem;">
+    <a class="navbar-toggler-icon dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown"></a>
+    <div class="dropdown-menu">
+       <a class="dropdown-item" href="#">
+          <h4><i class="fas fa-tachometer-alt"></i> Dashboard</h4>
+       </a>
+       <a class="dropdown-item" href="#">
+          <h4><i class="fas fa-home"></i> Site Home</h4>
+       </a>
+       <a class="dropdown-item" href="#">
+          <h4><i class="fas fa-calendar-week"></i> Calendar</h4>
+       </a>
+       <a class="dropdown-item" href="#">
+          <h4><i class="fas fa-file-archive"></i> Private Files</h4>
+       </a>
+       <!--- Dropdown items below are for COURSE (SUBJECT) CONTENT PAGES ONLY -->
+       <a class="dropdown-item" href="#">
+          <h4><i class="fas fa-users"></i> Participants</h4>
+       </a>
+       <a class="dropdown-item" href="#">
+          <h4><i class="fas fa-certificate"></i> Badges</h4>
+       </a>
+       <a class="dropdown-item" href="#">
+          <h4><i class="far fa-star"></i> Competencies</h4>
+       </a>
+       <a class="dropdown-item" href="#">
+          <h4><i class="fas fa-graduation-cap"></i> Grades</h4>
+       </a>
+    </div>
+ </nav>
+<div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-12" id = "subject">
+  <div>
+    <h3 id = "announce">English 3</h3>
+	<ul class="breadcrumb breadcrumb-sm">
+		<li class="breadcrumb-item"><a style="color: #ffffff" href="#">Dashboard</a></li>
+		<li class="breadcrumb-item"><a style="color: #ffffff" href="#">English 3</a></li>
+		<li class="breadcrumb-item"><a style="color: #ffffff" href="#">First and Second Week, LG 1.0</a></li>
+		<li class="breadcrumb-item active"><i>Graded Formative Assessment Module 1.0</i></li>
+	  </ul>
+  </div>
+  </div>
+</div>
+
+
+<div class="row">
+	<div class="col-sm-12" id = "urgent">
+<div>
+  <h3 id = "asessment">Graded Formative Assessment Module 1.0</h3>
+</div>
+</div>  
+</div>
+  <div class="row">
+    <div class="col-md-12" id = "quiz">
+      <div>
+            Test A. You got jebataid. Please proceed on the [fake] test. 
+        </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12" id = "item-one">
+      <div>
+            1. I saw every student's hope crumble in front of me.
+        </div>
+        <div style="text-align: center;">
+         <img src="https://scontent.fmnl3-1.fna.fbcdn.net/v/t1.15752-9/259768100_441047011096014_6411771519106046770_n.jpg?_nc_cat=110&ccb=1-5&_nc_sid=ae9488&_nc_eui2=AeGS95irycY48iElQGTDhzv5y5hFvuxsF1HLmEW-7GwXUd1tCJM7UOOkiTcl8fYXnn8wBN9yXH46z-35QA0BfYLS&_nc_ohc=A2k38w9UlwIAX-qB45P&_nc_ht=scontent.fmnl3-1.fna&oh=03_AVIjhCZfw2Kbs7WJ-CiOx6dCJKpeq55VjgFT9NJt00N8rg&oe=6221CB9D" class="img-fluid" alt="an image">
+        </div>
+        <br>
+        <div class="form-check">
+          <label class="form-check-label">
+            <input type="radio" class="form-check-input" name="optradio">"Kasalanan 'to lahat ni Gwyneth Chua (91837812)"
+          </label>
+        </div>
+        <div class="form-check">
+          <label class="form-check-label">
+            <input type="radio" class="form-check-input" name="optradio">"Kasalanan 'to lahat ni Gwyneth Chua (91837813)"
+          </label>
+        </div>
+        <div class="form-check">
+          <label class="form-check-label">
+            <input type="radio" class="form-check-input" name="optradio">"Kasalanan 'to lahat ni Gwyneth Chua (91837814)"
+          </label>
+        </div>
+        <div class="form-check">
+          <label class="form-check-label">
+            <input type="radio" class="form-check-input" name="optradio">"Kasalanan 'to lahat ni Gwyneth Chua (91837815)"
+          </label>
+        </div>
+        <br>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12" id = "item-two">
+      <div>
+            2. *gAsp* The audacity you have.
+        </div>
+        <div style="text-align: center;">
+          <img src="https://scontent.fmnl3-4.fna.fbcdn.net/v/t1.15752-9/272628888_1139364296835935_8984064845701978296_n.jpg?_nc_cat=107&ccb=1-5&_nc_sid=ae9488&_nc_eui2=AeFBckv06z8u4SYmJYOQXXvhk3vIKKEN8IOTe8gooQ3wg353QjjZugxbiZnvuP4rIJkawJjgey81-lBdvOwhwEn3&_nc_ohc=8BZ8itVtJVwAX81Z7ak&_nc_oc=AQlqb2KLvc_JO6eOKca-rHVsimSU5uFYC5oqxR_eAlveuPWs6yM1HyaLyFVEaT8PQqPkOkCoerMGG-Eb-Rp95Ysw&_nc_ht=scontent.fmnl3-4.fna&oh=03_AVLYxNDlElUGlT-7_UyF8m62yb2QG0KkObwmO9gnMIcTDA&oe=62206DC2" class="img-fluid" alt="an image">
+        </div>
+        <br>
+        <div class="form-check">
+          <label class="form-check-label">
+            <input type="radio" class="form-check-input" name="optradio">France does not exist.
+          </label>
+        </div>
+        <div class="form-check">
+          <label class="form-check-label">
+            <input type="radio" class="form-check-input" name="optradio">France does not exist.
+          </label>
+        </div>
+        <div class="form-check">
+          <label class="form-check-label">
+            <input type="radio" class="form-check-input" name="optradio">France does not exist.
+          </label>
+        </div>
+        <div class="form-check">
+          <label class="form-check-label">
+            <input type="radio" class="form-check-input" name="optradio">Wait, isn't it supposed to be Italy?
+          </label>
+        </div>
+        <br>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12" id = "item-three">
+      <div>
+            3. NFT's are cringe. 
+        </div>
+        <div style="text-align: center;">
+          <img src="https://scontent.fmnl3-4.fna.fbcdn.net/v/t1.15752-9/272024652_1080381399483958_6742471873880089816_n.jpg?_nc_cat=106&ccb=1-5&_nc_sid=ae9488&_nc_eui2=AeEXDghP-dT1IDSaJOfnP8jFreNIe8AakPCt40h7wBqQ8CJ19LGp9jBKErfnM4DY_vbYnGBQMF45z2waKRLkDofc&_nc_ohc=wMo0QLM9WfYAX_4-H3F&_nc_ht=scontent.fmnl3-4.fna&oh=03_AVK4zswxwzjZIS_MNuAzniXfrE7dMbrOKNKZgCp352qvAg&oe=6220DC9F" class="img-fluid" alt="an image">
+        </div>
+        <br>
+        <div class="form-check">
+          <label class="form-check-label">
+            <input type="radio" class="form-check-input" name="optradio">I don't understand the NFT craze and probably never will.
+          </label>
+        </div>
+        <div class="form-check">
+          <label class="form-check-label">
+            <input type="radio" class="form-check-input" name="optradio">They're raising awareness for climate change but buy NFTs. 
+          </label>
+        </div>
+        <div class="form-check">
+          <label class="form-check-label">
+            <input type="radio" class="form-check-input" name="optradio">NFTs are more expensive than my whole body. 
+          </label>
+        </div>
+        <div class="form-check">
+          <label class="form-check-label">
+            <input type="radio" class="form-check-input" name="optradio">Pog through the pain.
+          </label>
+        </div>
+        <br>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12" id = "item-four">
+      <div>
+            4. A war crime.
+        </div>
+        <div style="text-align: center;">
+          <img src="https://scontent.fmnl3-1.fna.fbcdn.net/v/t1.15752-9/258904348_472813367755824_8043135100061579445_n.jpg?_nc_cat=110&ccb=1-5&_nc_sid=ae9488&_nc_eui2=AeH7fwr9UmWsgZZaNZQ9glP_XA6J6un7ADVcDonq6fsANT4CyBu-utTneI725baRHVmW4Adl0nPNz2rPrGszEr41&_nc_ohc=7AqwsT0CnqUAX89R9Eu&tn=oN34pKRVgcjvIJjH&_nc_ht=scontent.fmnl3-1.fna&oh=03_AVK5oiofQ8LP1tce5WTG6ttXRSBpv3mI3nZ1Q9jIUk7JKw&oe=62221E78" class="img-fluid" alt="an image">
+        </div>
+        <br>
+        <div class="form-check">
+          <label class="form-check-label">
+            <input type="radio" class="form-check-input" name="optradio">I intentionally eat pineapple pizza to trigger Italians. :)
+          </label>
+        </div>
+        <div class="form-check">
+          <label class="form-check-label">
+            <input type="radio" class="form-check-input" name="optradio">What's wrong with pineapples on pizza?
+          </label>
+        </div>
+        <div class="form-check">
+          <label class="form-check-label">
+            <input type="radio" class="form-check-input" name="optradio">It's the fourth question and I'm already struggling to put options.
+          </label>
+        </div>
+        <div class="form-check">
+          <label class="form-check-label">
+            <input type="radio" class="form-check-input" name="optradio">I actually eat pineapple pizza. 
+          </label>
+        </div>
+        <br>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12" id = "item-five">
+      <div>
+            5. The devolution of human kind.
+        </div>
+        <div style="text-align: center;">
+          <img src="https://scontent.fmnl3-1.fna.fbcdn.net/v/t1.15752-9/259654877_376109234325173_4393671748539672686_n.jpg?_nc_cat=108&ccb=1-5&_nc_sid=ae9488&_nc_eui2=AeHItcYT9h5nsID-LQymS0ac5_lgN9Umk7_n-WA31SaTv8sT5pt5wslMqQ5hwgC9o7_yaVesw4DH6_cH4mCeR4yM&_nc_ohc=PhBCUJgIe1gAX9nv7Dn&_nc_ht=scontent.fmnl3-1.fna&oh=03_AVIYRfnUPAvIgjPyLCMhtFkFwX76oZCCJyH7x5ugfyd4rg&oe=6221A9DE" class="img-fluid" alt="an image">
+        </div>
+        <br>
+        <div class="form-check">
+          <label class="form-check-label">
+            <input type="radio" class="form-check-input" name="optradio">I am a kid at heart. Leave me alone.
+          </label>
+        </div>
+        <div class="form-check">
+          <label class="form-check-label">
+            <input type="radio" class="form-check-input" name="optradio">I don't think your girlfriend wants an accurate model of a heart for Valentines.
+          </label>
+        </div>
+        <div class="form-check">
+          <label class="form-check-label">
+            <input type="radio" class="form-check-input" name="optradio">It was from a romance enthusiast.
+          </label>
+        </div>
+        <div class="form-check">
+          <label class="form-check-label">
+            <input type="radio" class="form-check-input" name="optradio">Heh.
+          </label>
+        </div>
+        <br>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12" id = "item-six">
+      <div>
+            6. Her songs are bangers though.
+        </div>
+        <div style="text-align: center;">
+          <img src="https://ahseeit.com//king-include/uploads/2019/03/53236491_419487348860432_169712785708172708_n-2817619699.jpg" class="img-fluid" alt="an image">
+        </div>
+        <br>
+        <div class="form-check">
+          <label class="form-check-label">
+            <input type="radio" class="form-check-input" name="optradio">Stan Taylor Swift.
+          </label>
+        </div>
+        <div class="form-check">
+          <label class="form-check-label">
+            <input type="radio" class="form-check-input" name="optradio">What.
+          </label>
+        </div>
+        <div class="form-check">
+          <label class="form-check-label">
+            <input type="radio" class="form-check-input" name="optradio">Stream 'Red' on Spotify. Stream 'Red' on Spotify. Stream 'Red' on Spotify. Stream 'Red' on Spotify.
+          </label>
+        </div>
+        <div class="form-check">
+          <label class="form-check-label">
+            <input type="radio" class="form-check-input" name="optradio">Sir we aren't sucking up to you, we swear with our hearts.
+          </label>
+        </div>
+        <br>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12" id = "item-seven">
+      <div>
+            7. I am an unfunny person.
+        </div>
+        <div style="text-align: center;">
+          <img src="https://scontent.fmnl3-1.fna.fbcdn.net/v/t1.15752-9/250937940_679542433011102_5049385662550029287_n.jpg?_nc_cat=108&ccb=1-5&_nc_sid=ae9488&_nc_eui2=AeHarXm0vV6ltgX_sZeoJEWL_0oEuLHBp-z_SgS4scGn7L6EQj02E8B2lG4dfOj7_FT9x8my0zVJEEw-b8mGRvbe&_nc_ohc=fuWzFca1W4IAX-TQqHh&_nc_ht=scontent.fmnl3-1.fna&oh=03_AVIZ_mMFRrGCXyXykMXoi00p1e0fv3AmA9GPa8A87Y-5hw&oe=62217AE0" class="img-fluid" alt="an image">
+        </div>
+        <br>
+        <div class="form-check">
+          <label class="form-check-label">
+            <input type="radio" class="form-check-input" name="optradio">I wholeheartedly agree.
+          </label>
+        </div>
+        <div class="form-check">
+          <label class="form-check-label">
+            <input type="radio" class="form-check-input" name="optradio">Why did you even do this part of the quiz. 
+          </label>
+        </div>
+        <div class="form-check">
+          <label class="form-check-label">
+            <input type="radio" class="form-check-input" name="optradio">Same. *hugs*
+          </label>
+        </div>
+        <div class="form-check">
+          <label class="form-check-label">
+            <input type="radio" class="form-check-input" name="optradio">You're so cringe bro. #cancelled /j
+          </label>
+        </div>
+        <br>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12" id = "item-eight">
+      <div>
+            8. But have this food to distract you from that. 
+        </div>
+        <div style="text-align: center;">
+        <img src="https://scontent.fmnl3-4.fna.fbcdn.net/v/t1.15752-9/273207737_972846103585122_2642915377013448571_n.jpg?_nc_cat=107&ccb=1-5&_nc_sid=ae9488&_nc_eui2=AeGC5xK_T_7Z-lQxL-KqUhwzZrUuIdNZGDJmtS4h01kYMrENBvXOayhWGX6wkWXrut4R38L2l4Hf9jUF6vLIYP36&_nc_ohc=AgohLwbeEkYAX8fyU06&_nc_ht=scontent.fmnl3-4.fna&oh=03_AVK-wwK76x8dfeZqUtmZBYhULtuQbZ4aXPNokFsAwvz_2w&oe=621FEB15" class="img-fluid" alt="an image">
+        </div>
+        <br>
+        <div class="form-check">
+          <label class="form-check-label">
+            <input type="radio" class="form-check-input" name="optradio">Why must you show me this cursed imagery.
+          </label>
+        </div>
+        <div class="form-check">
+          <label class="form-check-label">
+            <input type="radio" class="form-check-input" name="optradio">I don't think this counts as an apology.
+          </label>
+        </div>
+        <div class="form-check">
+          <label class="form-check-label">
+            <input type="radio" class="form-check-input" name="optradio">No. 
+          </label>
+        </div>
+        <div class="form-check">
+          <label class="form-check-label">
+            <input type="radio" class="form-check-input" name="optradio">Why thank you. *eats it* 
+          </label>
+        </div>
+        <br>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12" id = "item-nine">
+      <div>
+            9. And here we see a student in their natural habitat. (real)  
+        </div>
+        <div style="text-align: center;">
+        <img src="https://scontent.fmnl3-4.fna.fbcdn.net/v/t1.15752-9/255126942_1868684536666058_2651949381353129218_n.jpg?_nc_cat=106&ccb=1-5&_nc_sid=ae9488&_nc_eui2=AeGQq_DsgWaXbOsPsNT04RrKLKRzQdH2hUQspHNB0faFRDnjNlca1j729XrI0pQ0Tl8rV1M1VnZo4Eglh8T947NN&_nc_ohc=DjUcm2XeoqcAX8ksTjp&_nc_oc=AQm91sy0fgKxeqtdA3hNNjDaPkMMTDZeZ98aLhqyxmnIdh98KHNKI_GsibXVS9FqAH-o-2N4vhk6A9VcAYHMAL4y&_nc_ht=scontent.fmnl3-4.fna&oh=03_AVJDcqxqNDkU-GyOmKHAizRW0BCKQEm4rEUaWPvi2iu5nA&oe=6220DEAD" class="img-fluid" alt="an image">
+        </div>
+        <br>
+        <div class="form-check">
+          <label class="form-check-label">
+            <input type="radio" class="form-check-input" name="optradio">I am that student.
+          </label>
+        </div>
+        <div class="form-check">
+          <label class="form-check-label">
+            <input type="radio" class="form-check-input" name="optradio">I was that student.
+          </label>
+        </div>
+        <div class="form-check">
+          <label class="form-check-label">
+            <input type="radio" class="form-check-input" name="optradio">I am still that student.
+          </label>
+        </div>
+        <div class="form-check">
+          <label class="form-check-label">
+            <input type="radio" class="form-check-input" name="optradio">You forgot the coffee on the side. You're welcome.
+          </label>
+        </div>
+        <br>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12" id = "item-ten">
+      <div>
+            10. Say hello to Terry. He doesn't bite. :) 
+        </div>
+        <div style="text-align: center;">
+        <img src="https://scontent.fmnl3-3.fna.fbcdn.net/v/t1.15752-9/258504662_238003611853682_7952156366863106147_n.jpg?_nc_cat=111&ccb=1-5&_nc_sid=ae9488&_nc_eui2=AeFhiHJjLqja2rbzmJ1kvovkebNYPgsz-JV5s1g-CzP4lYrINgA-VjlTlKHbdTovftYHeVkaKONFjKXhvJLZVzl1&_nc_ohc=20D3PjI8VkUAX_d7MM7&_nc_ht=scontent.fmnl3-3.fna&oh=03_AVLczn9vmN-uX8W1YjbQp6QWM8GKW-YUoa15n_4ZquNUDA&oe=6220257E" class="img-fluid" alt="an image">
+        </div>
+        <br>
+        <div class="form-check">
+          <label class="form-check-label">
+            <input type="radio" class="form-check-input" name="optradio">*pats Terry* He's a good boy.
+          </label>
+        </div>
+        <div class="form-check">
+          <label class="form-check-label">
+            <input type="radio" class="form-check-input" name="optradio">Hello Terry.
+          </label>
+        </div>
+        <div class="form-check">
+          <label class="form-check-label">
+            <input type="radio" class="form-check-input" name="optradio">I hate sharks.
+          </label>
+        </div>
+        <div class="form-check">
+          <label class="form-check-label">
+            <input type="radio" class="form-check-input" name="optradio">That smiley face throws me off. Please don't kill my grandma.
+          </label>
+        </div>
+        <br>
+        <br>
+        <p style="color: #ffffff; text-align: center;">
+          Don't come back please. It'll be a loop. <br>
+          <a href="#" class="btn btn-info" role="button">Submit</a>
+        </p>
+    </div>
+  </div>
+
+<div class="row">
+	<div class="col-sm-12" id = "navigation">
+		<div>
+ 		 <p style="font-size: 22px;"><b>NEXT &#187;</b></p>
+      <a style="font-size: 15px; color: #ffffff;" href="#"><i>Graded Formative Assessment Module 1.1</i></a>
+    </div>
+</div>
+</div>
+</div>
+  <footer>
+    <div class="footer-content">
+       <h3>KHub: Reimagined</h3>
+       <h6>PSHS CLC - Knowledge Hub</h6>
+    </div>
+    <div class="footer-bottom">
+       <p>Copyright 2022 &copy; <a href="#">Khub: Reimagined </a>  </p>
+       <div class="footer-menu">
+          <ul class="f-menu">
+             <li><a href="">Dashboard</a></li>
+             <li><a href="">Contact Us</a></li>
+             <li><a href="">About</a></li>
+             <li><a href="">Policies</a></li>
+          </ul>
+       </div>
+    </div>
+ </footer>
+</body>
+</html>

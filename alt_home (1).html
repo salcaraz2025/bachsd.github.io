@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>KHub: Log-In To The Site</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+      <link href="http://fonts.cdnfonts.com/css/gope" rel="stylesheet">
+      <link rel="stylesheet" media="screen and (min-width: 900px)" href="widescreen.css">
+      <link rel="stylesheet" media="screen and (max-width: 600px)" href="smallscreen.css">   
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+      <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+      <style>
+         body {
+         background-image: url(https://lh5.googleusercontent.com/p/AF1QipO456K1mFIqGDA9s5pg2fWCaO4auK1KNP7f_0g=w600-h650-p-k-no);
+         background-repeat: no-repeat;
+         background-size: cover;
+         background-attachment: fixed;
+         font-family: 'Poppins', 'Gope', sans-serif; 
+         font-size: 14px;
+         line-height: 1.6em;
+         -webkit-font-smoothing: antialiased;
+         -moz-osx-font-smoothing: grayscale;
+         }
+         aside {
+         background-color: #00013f;
+         color:#FFFFFF;
+         height: 505px;
+         margin-top: 100px;
+         padding: 20px;
+         margin-bottom: 30px;
+         border-radius: 4px;
+         overflow: scroll;
+         }
+         aside h2 {
+         font-family: 'Gope', sans-serif;
+         }
+         .form {
+         background: #FFFFFF;
+         border-radius: 4px;
+         height: 505px;
+         box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+         box-sizing: border-box;
+         margin-top: 100px;
+         margin-bottom: 30px;
+         overflow: hidden;
+         }
+         .form-toggle {
+         position: absolute;
+         background: #FFFFFF;
+         width: 60px;
+         height: 60px;
+         border-radius: 100%;
+         transform-origin: center;
+         transform: translate(0, -25%) scale(0);
+         }
+         .form-group {
+         display: flex;
+         flex-wrap: wrap;
+         justify-content: space-between;
+         margin: 0 0 20px;
+         }
+         .form-group label {
+         display: block;
+         margin: 0 0 10px;
+         color: rgba(0, 0, 0, 0.6);
+         font-size: 12px;
+         font-weight: 500;
+         line-height: 1;
+         text-transform: uppercase;
+         letter-spacing: 0.2em;
+         }
+         .two .form-group label {
+         color: #FFFFFF;
+         }
+         .form-group input {
+         outline: none;
+         display: block;
+         background: rgba(0, 0, 0, 0.1);
+         width: 100%;
+         border: 0;
+         border-radius: 4px;
+         box-sizing: border-box;
+         padding: 12px 20px;
+         color: rgba(0, 0, 0, 0.6);
+         font-family: inherit;
+         font-size: inherit;
+         font-weight: 500;
+         line-height: inherit;
+         transition: 0.3s ease;
+         }
+         .form-group input:focus {
+         color: rgba(0, 0, 0, 0.8);
+         }
+         .two .form-group input {
+         color: #FFFFFF;
+         }
+         .two .form-group input:focus {
+         color: #FFFFFF;
+         }
+         .form-group button {
+         outline: none;
+         background: #00013f;
+         width: 100%;
+         border: 0;
+         border-radius: 4px;
+         padding: 12px 20px;
+         color: #FFFFFF;
+         font-family: inherit;
+         font-size: inherit;
+         font-weight: 500;
+         line-height: inherit;
+         text-transform: uppercase;
+         cursor: pointer;
+         }
+         .two .form-group button {
+         background: #FFFFFF;
+         color: #00013f;
+         }
+         .form-group .form-remember {
+         font-size: 12px;
+         font-weight: 400;
+         letter-spacing: 0;
+         text-transform: none;
+         }
+         .form-group .form-remember input[type=checkbox] {
+         display: inline-block;
+         width: auto;
+         margin: 0 10px 0 0;
+         }
+         .form-group .form-recovery {
+         color: #00013f;
+         font-size: 12px;
+         text-decoration: none;
+         }
+         .form-panel {
+         padding: 60px calc(5% + 60px) 60px 60px;
+         box-sizing: border-box;
+         }
+         .form-header {
+         margin: 0 0 40px;
+         }
+         .form-header h2 {
+         padding: 4px 0;
+         color: #00013f;
+         font-size: 24px;
+         font-weight: 700;
+         text-transform: uppercase;
+         }
+      </style>
+   </head>
+   <body>
+      <div class="container">
+         <div class="row justify-content-center logo">
+            <img src="https://khub.clc.pshs.edu.ph/pluginfile.php/1/theme_moove/logo/1633921427/khub_header.png" title="PSHS Knowledge Hub - CLC" alt="PSHS Knowledge Hub - CLC" id="logo"/>
+         </div>
+         <div class="row">
+            <aside class="col-sm-6">
+               <h2>Welcome to PSHS CLC's Knowledge Hub!</h2>
+               <p> This website is the official PSHS CLC platform where students study, take quizzes, and submit their respective works. To access the site, please log-in to the page.</p>
+               <br>
+               <h3> Additional info</h3>
+               <h4>MANDATE</h4>
+               <p>The Philippine Science High School (PSHS) was established by the Republic Act (RA) 3661, also known as the PSHS Charter, which was signed into law in 1964 by President Diosdado Macapagal. This charter mandates the PSHS to a secondary course with emphasis on subjects pertaining to service offered on a free scholarship basis with the end in view of preparing its students for a science career.</p>
+               <h4>MISSION</h4>
+               <p>The Philippine Science High School, operating under one System of Governance and Management, provides scholarships to students with high aptitude in science and mathematics.</p>
+               <p>The PSHS System offers an education that is humanistic in spirit, global in perspective, and patriotic in orientation. It is based on a curriculum that emphasizes science and mathematics and the development of well-rounded individuals.</p>
+               <p>The PSHS System prepares its students for careers in Science and Technology and contribute to nation building by helping the country attain a critical mass of professionals and leaders in Science and Technology.</p>
+               <h4>VISION</h4>
+               <p>We are leading science high school in the Asia Pacific region preparing our scholars to become globally-competitive Filipino scientists equipped with 21st century skills and imbued with the core values of truth, excellence, and service to nation.</p>
+               <h4>PHILOSOPHY</h4>
+               <p>The main purpose of the PSHS education is to develop the full potential and unique giftedness of its scholars. The PSHS special science curriculum instills a passion for learning in the scholars and inspires them to choose careers in science and technology in order to contribute to national development. The PSHS is most effective in a globally-competitive environment characterized by all-around performance excellence, a dynamic and collaborative leadership, outstanding facilities, resources and support alliances, and an unswerving commitment of service to the nation and to one another.</p>
+            </aside>
+            <div class="col-sm-6">
+               <div class="form">
+                  <div class="form-toggle"></div>
+                  <div class="form-panel one">
+                     <div class="form-header">
+                        <h2>LOGIN</h2>
+                     </div>
+                     <div class="form-content">
+                        <form>
+                           <div class="form-group">
+                              <label for="username">Username/Email</label>
+                              <input type="text" id="username" name="username" required="required"/>
+                           </div>
+                           <div class="form-group">
+                              <label for="password">Password</label>
+                              <input type="password" id="password" name="password" required="required"/>
+                           </div>
+                           <div class="form-group">
+                              <label class="form-remember">
+                              <input type="checkbox"/>Remember Me
+                              </label><a class="form-recovery" href="#">Forgot Password?</a>
+                           </div>
+                           <div class="form-group">
+                              <button type="submit">Log In</button>
+                           </div>
+                        </form>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </body>
+</html>
